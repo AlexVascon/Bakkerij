@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  max-width: 300px;
+}
+
+aside h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+aside .title span {
+  border-bottom: 2px solid #D8BC69;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+aside div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+aside span,
+aside p,
+aside address {
+  font-size: 12px;
+  margin: 0;
+}
+
+.opening-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opening-hours li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+  margin: 3px 0;
+}
+
+.opening-hours .day {
+  width: 55px;
+  flex-shrink: 0;
+}
+
+.opening-hours .time {
+  border-left: 1px solid #D8BC69;
+  padding-left: 4px;
+  flex: 0 0 auto;
+}
+
+form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+aside h4,
+aside span,
+aside p,
+aside address {
+  font-family: "Lato", sans-serif;
+}
+
+form label {
+  font-family: "Lato", sans-serif;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #e6e3e3;
+  border: 1px solid #D8BC69;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+form button {
+  font-size: 12px;
+  background-color: #D8BC69;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 40px;
+  max-width: 140px;
+  cursor: pointer;
+}
+
+.button-div {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  align-self: stretch;
+}
+
+.button-div button {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  aside {
+    max-width: 100%;
+    width: 100%;
+    order: -1;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .opening-hours li {
+    gap: 5px;
+  }
+
+  .opening-hours .day {
+    width: 70px;
+  }
+}
